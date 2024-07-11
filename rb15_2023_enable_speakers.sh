@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-COMMAND="hda-verb /dev/snd/hwC1DO 0x20"
+COMMAND="hda-verb /dev/snd/hwC1D0 0x20"
 PARAMS="0x500_0x7
 0x500_0x7
 0x500_0x10
@@ -4081,8 +4081,9 @@ command_check() {
 enable_audio() {
   for i in ${PARAMS}; do 
     PARAM=$(echo ${i} | sed 's/_/ /g');
-    echo -e "${COMMAND} ${PARAM}";
-    unset PARAM;
+    COMM="${COMMAND} ${PARAM}";
+    echo "$(${COMM})";
+    unset PARAM COMM;
   done
 }
 
