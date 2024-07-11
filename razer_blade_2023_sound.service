@@ -1,0 +1,11 @@
+[Unit]
+Description=Enables audio on 15" Razer Blade 2023
+After=pipewire.service
+
+[Service]
+Type=idle
+Environment="TERM=dumb"
+ExecStart=/opt/bin/rb15_2023_enable_speakers.sh
+
+[Install]
+WantedBy=graphical.target
