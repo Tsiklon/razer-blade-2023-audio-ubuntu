@@ -12,4 +12,13 @@ Ubuntu 24.04
 
 ## Execution
 
-To manually bring up sound on this machine execute this script with root privileges
+To manually bring up sound on this machine execute this script with root privileges.
+
+## Systemd Service
+
+Alternatively you can set this to automatically apply at boot by using the systemd service
+
+1. Copy the script to `/opt/bin/` as root 
+2. Copy the service file to `/etc/systemd/system/` as root
+3. Run `systemctl daemon-reload` to pick up the new daemon
+4. enable at login with `sudo systemctl enable razer_blade_2023_sound.service`
