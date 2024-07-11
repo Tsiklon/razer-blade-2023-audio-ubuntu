@@ -1,4 +1,4 @@
-# README
+# Enabling Speaker Audio on 15" Razer Blade 2023 
 
 Basic enablement patch from blindly applying settings obtained here: https://bugzilla.kernel.org/show_bug.cgi?id=207423
 
@@ -7,8 +7,8 @@ Basic enablement patch from blindly applying settings obtained here: https://bug
 `alsa-tools`
 
 ## tested on
-Razer Blade 15 - RZ09-0485Z 2023 model
-Ubuntu 24.04
+- Razer Blade 15 2023 model - RZ09-0485Z
+- Ubuntu 24.04
 
 ## Execution
 
